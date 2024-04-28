@@ -3,7 +3,7 @@
 #
 # M.Alexandre   apr.28  initial release
 #
-version: '1'
+version: '3.3'
 
 services:
 
