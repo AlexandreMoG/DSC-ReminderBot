@@ -9,7 +9,7 @@ services:
 
   reminder-bot:
     build:
-      context: ..
+      context: .
       dockerfile: Dockerfile
     image: reminder-bot:latest
     # WARNING: a container-name implies only one instance
@@ -17,9 +17,7 @@ services:
     restart: unless-stopped
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ../app/config:/app/config
-    privileged: true
+      - ./credential.env:/app/config/credential.env:ro
     network_mode: bridge
     environment:
       - TZ=Europe/Paris
-

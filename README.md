@@ -1,4 +1,4 @@
-# ReminderBot-discord
+# DSC-ReminderBot
 This project features a docker image to build a discord application that remind users after a choosen interval of time.
 
 It was made for the Pursuit of Gilia discord server.  
@@ -26,8 +26,7 @@ cd ReminderBot-discord
 
 **Build the docker image and deploy the application**:
 ```sh
-cd compose
-docker-compose up
+docker-compose up -d
 ```
 
 ## CONFIGURATION 
