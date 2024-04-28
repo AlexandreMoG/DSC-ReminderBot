@@ -32,9 +32,8 @@ docker-compose up -d
 ## CONFIGURATION 
 
 You do not have to modify the `docker-compose.yml`.  
-`app/config` directory holds persistent configuration files. - These files are preserved outside the container.  
 
-You should create a file named `credentials.env` containing :
+You should modify the file named `credentials.env` containing :
 ```
 GUILD_ID=<The ID of the server>
 API_TOKEN=<Bot token>
