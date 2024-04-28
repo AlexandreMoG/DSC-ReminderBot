@@ -1,0 +1,25 @@
+#
+# Discord reminder-bot
+#
+# M.Alexandre   apr.28  initial release
+#
+version: '1'
+
+services:
+
+  reminder-bot:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    image: reminder-bot:latest
+    # WARNING: a container-name implies only one instance
+    container_name: reminder-bot
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ../app/config:/app/config
+    privileged: true
+    network_mode: bridge
+    environment:
+      - TZ=Europe/Paris
+
