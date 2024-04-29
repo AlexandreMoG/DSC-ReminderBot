@@ -41,9 +41,8 @@ from reminder import Reminder
 logger = logging.getLogger('nextcord')
 logger.setLevel(logging.DEBUG)
 
-dotenv_path = Path("./config/credentials.env")
+dotenv_path = Path("/app/config/credentials.env")
 load_dotenv(dotenv_path=dotenv_path)
-
 API_TOKEN = os.getenv('API_TOKEN')
 GUILD_ID = int(os.getenv('GUILD_ID'))
 ROLE_ID = os.getenv('ROLE_ID')

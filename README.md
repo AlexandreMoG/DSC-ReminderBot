@@ -22,7 +22,7 @@ git clone https://github.com/AlexandreMoG/ReminderBot-discord.git
 cd ReminderBot-discord
 ```
 
-**Create a configuration file with the GUILD_ID, the API_TOKEN and the ROLE_ID, check the CONFIGURATION section for more information.**
+**Modify the configuration file credentials.env with the GUILD_ID, the API_TOKEN and the ROLE_ID, check the CONFIGURATION section for more information.**
 
 **Build the docker image and deploy the application**:
 ```sh

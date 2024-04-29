@@ -16,8 +16,11 @@ services:
     container_name: reminder-bot
     restart: unless-stopped
     volumes:
+      - type: bind
+        source: ${PWD}/credentials.env
+        target: /app/config/credentials.env
+        read_only: true
       - /etc/localtime:/etc/localtime:ro
-      - ./credential.env:/app/config/credential.env:ro
     network_mode: bridge
     environment:
       - TZ=Europe/Paris
