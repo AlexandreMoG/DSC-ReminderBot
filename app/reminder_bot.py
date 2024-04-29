@@ -39,7 +39,7 @@ from reminder import Reminder
 
 #Logger
 logger = logging.getLogger('nextcord')
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 dotenv_path = Path("/app/config/credentials.env")
 load_dotenv(dotenv_path=dotenv_path)
